@@ -3,6 +3,8 @@ set encoding=UTF-8
 
 set guifont=Source\ Code\ Pro\ Medium\ \Nerd\ Font\ Complete\ Mono\ 11
 set guifont=SauceCodePro\ Nerd\ Font\ Mono\ Medium\ 12
+set guifont=Ubuntu\ Mono\ 13
+
 "set noantialias
 syntax enable
 filetype indent on
@@ -10,6 +12,10 @@ filetype plugin on
 
 set nu
 set nocompatible
+set autochdir
+
+set hlsearch
+nnoremap <C-l> :nohlsearch<Bar>:echo<CR>
 
 " Vim Plug 
 call plug#begin('~/.vim/plugged')
